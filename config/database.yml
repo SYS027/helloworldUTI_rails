@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: Pk@7470588990
+
+development:
+  <<: *default
+  database: helloworld027
+  username: postgres
+  password: Pk@7470588990
+
+test:
+  <<: *default
+  database: helloworld027
+
+production:
+  <<: *default
+  database: helloworld027
+  username: postgres
+  password: Pk@7470588990
